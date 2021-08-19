@@ -1,6 +1,7 @@
 const packagesContollers = require("../controllers/packages.controller");
 const addonesControllers = require("../controllers/addones.controller");
 const foodControllers = require("../controllers/food.controller");
+const UserController = require('../controllers/user.controller');
 
 module.exports = app => {
   app.get("/api/packages", packagesContollers.findAllPackeges);
@@ -22,4 +23,12 @@ module.exports = app => {
   app.post("/api/food", foodControllers.createNewFood);
   app.put("/api/food/:id", foodControllers.updateExistingFood);
   app.delete("/api/food/:id", foodControllers.deleteAnExistingFood);
+
+
+  app.post("/api/register", UserController.register);
+  app.post("/api/login", UserController.login);
+  app.get("/api/users", UserController.getAll);
+  app.get("/api/user/:id", UserController.findUser);
+  app.put("/api/user/:id", UserController.updateUser);
+  app.get("/api/logout", UserController.logout);
 };
