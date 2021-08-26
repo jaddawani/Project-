@@ -8,17 +8,21 @@ import {Button, Navbar , Container, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './Components/Header';
 import TabPanel from './Components/TabPanel';
-import SectionCarousel from './Components/SectionCarousel';
+import ImgSlider from './Components/ImgSlider';
+import MPHeader from './Components/MPHeader';
 
 function App() {
   return (
     <div >
+<MPHeader></MPHeader>
+      <br></br>
  <Header></Header>
  <TabPanel></TabPanel>
+ 
      {/* <CalenderDateTime></CalenderDateTime> */}
 
-{/* <SectionCarousel></SectionCarousel> */}
-     {/* <Map></Map> */}
+<ImgSlider></ImgSlider>
+     <Map></Map>
 
      {/* <GoogleCalender></GoogleCalender> */}
 
