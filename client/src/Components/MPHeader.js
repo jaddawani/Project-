@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 // import {Navbar, NavDropdown, Nav, Container} from '@material-ui/core'
-import {Button, Navbar , Container, Nav, NavDropdown} from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button, Navbar, Container, Nav, NavDropdown } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./Styles/MPHeaderStyle.css"
+
 const MPHeader = () => {
     return (
         <div>
@@ -43,4 +45,4 @@ const MPHeader = () => {
     )
 }
 
-export default MPHeader
+export default MPHeader;
