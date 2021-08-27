@@ -1,0 +1,27 @@
+
+ .tabPanel {
+    margin-left: 30%;
+   align-self: center;
+   /* width: 1500px;   */
+    display: flex; 
+}  
+
+.Appbar {
+  
+    flex:2;
+
+  
+    
+}
+.Tabs {
+  
+    background-color :rgb(29, 39, 38);
+    width: fit-content;
+    color: rgb(255, 10, 104);
+    font-weight: bolder;
+    
+ 
+
+}
+
+

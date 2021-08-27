@@ -1,32 +1,38 @@
-import logo from './logo.svg';
-// import './App.css';
+
+import './App.css';
 // import CalenderDateTime from './Components/Calender/CalenderDateTime';
-import Map from './Components/Map';
+
 import GoogleCalender from './Components/Calender/GoogleCalender';
 // import Button from 'react-bootstrap/Button';
 import {Button, Navbar , Container, Nav} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Header from './Components/Header';
-import TabPanel from './Components/TabPanel';
-import ImgSlider from './Components/ImgSlider';
-import MPHeader from './Components/MPHeader';
+
+import { Router } from '@reach/router';
+import MainPage from './Views/MainPage';
+import Parties from './Views/Parties';
+import Pricing from './Views/Pricing';
+import AddOnes from './Views/AddOnes';
+import Food from './Views/Food';
+
 
 function App() {
   return (
-    <div >
-<MPHeader></MPHeader>
-      <br></br>
- <Header></Header>
- <TabPanel></TabPanel>
+    <div className="App" >
+ {/* <Header></Header>
+ <TabPanel></TabPanel> */}
  
      {/* <CalenderDateTime></CalenderDateTime> */}
-
-<ImgSlider></ImgSlider>
-     <Map></Map>
-
      {/* <GoogleCalender></GoogleCalender> */}
 
-     <Button variant="primary">Primary</Button> 
+     <Router>
+
+      <MainPage path="/"></MainPage>
+      <Parties path="/parties"></Parties>
+      <Pricing path="/pricing"></Pricing>
+      <AddOnes path="/addones"></AddOnes>
+      <Food path="/food"></Food>
+     </Router>
+
        </div>
   );
 }
