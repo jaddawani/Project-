@@ -5,20 +5,28 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const MPHeader = () => {
     return (
         <div>
-            <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+            <Navbar collapseOnSelect expand="lg" bg="navbar navbar-light bg-warning" variant="dark">
   <Container>
-  <Navbar.Brand href="#home">Memorable</Navbar.Brand>
+  <img
+          alt=""
+          src="https://media.discordapp.net/attachments/847780444954296320/880729396426711060/memorable.PNG"
+          width="200"
+          height="150"
+          className="d-inline-block align-top"
+        />{' '}
+  {/* <Navbar.Brand href="#home">Memorable</Navbar.Brand> */}
+
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
     <Nav className="me-auto">
       {/* <Nav.Link href="#features">Features</Nav.Link>
       <Nav.Link href="#pricing">Pricing</Nav.Link> */}
-      <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
-        <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-        <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
-        <NavDropdown.Divider />
-        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      <NavDropdown title="Birthday Party" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1">Private Party</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Pricing</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Add-ones</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.4">Food</NavDropdown.Item>
+        
       </NavDropdown>
       
     </Nav>

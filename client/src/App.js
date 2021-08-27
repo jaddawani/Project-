@@ -26,7 +26,7 @@ function App(props) {
 
      {/* <GoogleCalender></GoogleCalender> */}
 
-     <Button variant="primary">Primary</Button> 
+     <Button variant="danger">Primary</Button> 
        </div>
   );
 }
