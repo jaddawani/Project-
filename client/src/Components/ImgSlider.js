@@ -20,7 +20,7 @@ const ImgSlider = () => {
             <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
           </Carousel.Caption>
         </Carousel.Item>
-        <Carousel.Item interval={500}>
+        <Carousel.Item interval={1000}>
           <img
             className="d-block w-100"
             src="https://th.bing.com/th/id/OIF.lkQoOltaPvNRwm1bSgqpwA?pid=ImgDet&rs=1"
