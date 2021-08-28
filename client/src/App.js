@@ -1,9 +1,6 @@
 
-<<<<<<< HEAD
 // import './App.css';
-=======
 import './App.css';
->>>>>>> 35ac5f1fa7e2551af4723d68741987fc0e24d163
 // import CalenderDateTime from './Components/Calender/CalenderDateTime';
 
 import GoogleCalender from './Components/Calender/GoogleCalender';
@@ -37,10 +34,6 @@ function App(props) {
       <Food path="/food"></Food>
      </Router>
 
-<<<<<<< HEAD
-     <Button variant="danger">Primary</Button> 
-=======
->>>>>>> 35ac5f1fa7e2551af4723d68741987fc0e24d163
        </div>
   );
 }

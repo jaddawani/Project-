@@ -9,7 +9,7 @@ import ImgSlider from '../Components/ImgSlider';
 
 const MainPage = () => {
     return (
-        <div>
+        <div class = "Mainpage">
           <MPHeader></MPHeader> 
         
         
