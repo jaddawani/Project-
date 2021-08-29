@@ -28,7 +28,7 @@
   color: #61dafb;
 }
 .Mainpage{
-  background-image: linear-gradient(rgb(3, 3, 3) , white , black);
+  background-image: linear-gradient(rgb(214, 212, 212) , white , rgb(214, 214, 214));
 }
 
 @keyframes App-logo-spin {

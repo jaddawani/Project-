@@ -7,7 +7,7 @@ const Map = () => {
                     
                     <div className="map">
                         <h2>Our Location:</h2>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1pRzE-ZS7IaEUPxTg7gn4KZI9LS0-X_bb" width="1200" height="350"></iframe>
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1pRzE-ZS7IaEUPxTg7gn4KZI9LS0-X_bb" style={{width:"107" + "rem"}} height="350"></iframe>
                        
                       
                     </div>

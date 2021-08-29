@@ -5,7 +5,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 const Header = () => {
   return (
     <div>
-    <Navbar bg="dark" variant="dark">
+    <Navbar bg="info" variant="info">
     <Container>
       <Navbar.Brand href="#home">
         <img
