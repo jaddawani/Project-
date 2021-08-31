@@ -83,12 +83,12 @@ export default function Header(props) {
     [classes.fixed]: fixed,
   });
   const brandComponent = (
-    <Button style={{ marginLeft: "-68rem" }}>
+    <Button style={{ marginLeft: "-40rem" }}>
       <img
         alt=""
         src="https://cdn.discordapp.com/attachments/847780444954296320/881131811588157470/Memologo-removebg-preview_1.png"
-        width="180"
-        height="180"
+        width="120"
+        height="120"
         className="d-inline-block align-top"
       />
     </Button>
@@ -110,26 +110,29 @@ export default function Header(props) {
           {/* <Navbar.Toggle aria-controls="basic-navbar-nav" /> */}
           {/* <Navbar.Collapse id="basic-navbar-nav"> */}
           <Nav className="mr-auto">
+          <Button variant="primary">
             <Nav.Link className="navColor" style={{ color: "transparent" }} href="/">
               Home
-            </Nav.Link>
-            <Nav.Link
+            </Nav.Link></Button>{' '}
+
+            <Button variant="primary"><Nav.Link
               className="navColor"
               style={{ color: "transparent" }}
               href="/about-us"
             >
+              
               Contact Us
-            </Nav.Link>
-            <Nav.Link
+            </Nav.Link></Button>{' '}
+            <Button variant="primary"><Nav.Link
               className="navColor"
               style={{ color: "transparent" }}
               href="/contact-us"
             >
               About Us
-            </Nav.Link>
+            </Nav.Link></Button>{' '}
 
             
-            <NavDropdown
+            <Button variant="primary"><NavDropdown
               className="navColor"
               style={{ color: "black"}}
               title="Birthday Party"
@@ -141,7 +144,7 @@ export default function Header(props) {
               <NavDropdown.Item href="#action/3.2">Pricing</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.3">Add-ones</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.4">Food</NavDropdown.Item>
-            </NavDropdown>
+            </NavDropdown></Button>{' '}
           </Nav>
           {/* <Form inline>
                                     <FormControl type="text" placeholder="Search" className="mr-sm-2" />
@@ -232,3 +235,5 @@ Header.propTypes = {
     ]).isRequired,
   }),
 };
+
+

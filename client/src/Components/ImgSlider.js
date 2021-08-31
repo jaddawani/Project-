@@ -1,13 +1,88 @@
-import React from "react";
+import {React, useState} from "react";
 import {Card} from "react-bootstrap"
 import {Button , Placeholder } from 'react-bootstrap'
+import { borders } from '@material-ui/system';
 // import Carousel from "react-material-ui-carousel";
+import { makeStyles } from "@material-ui/core/styles";
+import CardMedia from '@material-ui/core/CardMedia';
+import { Link, navigate } from "@reach/router";
+import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+
+
+
 
 import Carousel from "react-bootstrap/Carousel";
+
+
+
+
+
+
 const ImgSlider = () => {
+
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  paper: {
+    padding: theme.spacing(2),
+    textAlign: "center",
+    color: theme.palette.text.secondary,
+  },
+  grid: {
+    position: "relative",
+    width: "100%",
+    minHeight: "1px",
+    paddingRight: "15px",
+    paddingLeft: "15px",
+    flexBasis: "auto",
+  },
+  imgSlider: {
+    padding: "2rem",
+  },
+  title: {
+
+    display: "inline-block",
+    position: "relative",
+    marginTop: "30px",
+    minHeight: "32px",
+    color: "#FFFFFF",
+    textDecoration: "none",
+    
+  },
+
+  card:{
+
+    borderRadius:"5%",
+   
+
+  },
+
+  btn:{
+
+    color: "white",
+    textDecoration: "none"
+    
+    
+
+  },
+
+  textStyle:{
+    fontFamily: "cursive",
+    color:"black"
+
+  },
+
+
+  
+
+}));
+
+const classes = useStyles();
   return (
     <>
-    <div>
+    {/* <div>
       <Carousel fade>
         <Carousel.Item interval={1000}>
           <img
@@ -45,41 +120,113 @@ const ImgSlider = () => {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-    </div>
+    </div> */}
 
  <br>
  </br>
- <br>
- </br>
+ 
+
+    
+  {/* <Card className="text-center" border="primary">
+    <Card.Body>
+      <Card.Title>Card title</Card.Title>
+      <Card.Text>
+      This card has supporting text below as a natural lead-in to additional
+      content.{' '}
+      </Card.Text>
+      <Card.Text>
+      <iframe
+        width="500"
+        height="500px"
+        src="https://www.youtube.com/embed/O2aQhWwxuyY"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      </Card.Text>
+    </Card.Body> */}
+  {/* <Card style = {{marginLeft : "180px"}}> */}
+      
+  {/* </Card> */}
+  {/* </Card> */}
+  <br />
+   
+
+<h1>Start Planning! </h1>
+<br>
+</br>
+<br></br>
 
 <div className="d-flex justify-content-around">
-  <Card style={{ width: '36rem' }}>
-    <Card.Img variant="top" src="https://media.discordapp.net/attachments/847780444954296320/880729396426711060/memorable.PNG" />
+   <Card  className={classes.card }  border="danger" style={{ width: '25rem'}} >
+   <Card.Img  className={classes.card} variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2BXfSxLxXhfKQy0po0yyVq5QHAmqvi_QzMg&usqp=CAU" height ="252px"/>
     <Card.Body>
-      <Card.Title>Kalb</Card.Title>
-      <Card.Text>
+      <Card.Title>Food</Card.Title>
+      <Card.Text className={classes.textStyle}>
         Some quick example text to build on the card title and make up the bulk
         of the card's content.
       </Card.Text>
-      <Button variant="primary">Go somewhere</Button>
+      <Button variant="danger">
+           <Link className={classes.btn} to="/food">Add-Food</Link>
+            </Button>{' '}
+
     </Card.Body>
   </Card>
   
 
-  {/* <Card style={{ width: '18rem' }}>
-    <Card.Img variant="top" src="https://media.discordapp.net/attachments/847780444954296320/880729396426711060/memorable.PNG" />
+  <Card className={classes.card} border="danger" style={{ width: '25rem' }}>
+    {/* <Card.Img variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsRn49LgtL-HKZU0O8taliFvklFasEVNvTOA&usqp=CAU" height ="252px" /> */}
+    <CardMedia className={classes.card}
+          component="img"
+          alt="Contemplative Reptile"
+          height="252"
+          image="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsRn49LgtL-HKZU0O8taliFvklFasEVNvTOA&usqp=CAU"/>
     <Card.Body>
-      <Placeholder as={Card.Title} animation="glow">
-        <Placeholder xs={6} />
-      </Placeholder>
-      <Placeholder as={Card.Text} animation="glow">
-        <Placeholder xs={7} /> <Placeholder xs={4} /> <Placeholder xs={4} />{' '}
-        <Placeholder xs={6} /> <Placeholder xs={8} />
-      </Placeholder>
-      <Placeholder.Button variant="primary" xs={6} />
+      <Card.Title>Packages</Card.Title>
+      <Card.Text className={classes.textStyle}>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+      <Button variant="danger">
+           <Link className={classes.btn} to="/pricing">Packages</Link>
+            </Button>{' '}
     </Card.Body>
-  </Card> */}
+  </Card>
+  
+  <Card className={classes.card} border="danger" style={{ width: '25rem' }}  >
+    <Card.Img className={classes.card} variant="top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRvJTEkA0atfXA67lzc61aUiXo6MBha__tBiw&usqp=CAU" height ="252px"/>
+    <Card.Body>
+      <Card.Title>Add-ones</Card.Title>
+      <Card.Text className={classes.textStyle}>
+        Some quick example text to build on the card title and make up the bulk
+        of the card's content.
+      </Card.Text>
+      <Button variant="danger">
+           <Link className={classes.btn} to="/addones">Add-Ones</Link>
+            </Button>{' '}
+    </Card.Body>
+  </Card>
+  
+  
 </div>
+<br>
+</br>
+<h1>Know More About Us!</h1>
+<br></br>
+      <Card className={classes.card} border="danger">
+      <Card.Body>
+        <Card.Title >Memorabel</Card.Title>
+        <Card.Text className={classes.textStyle} >
+          This is a wider card with supporting text below as a natural lead-in to
+          additional content. This card has even longer content than the first to
+          show that equal height action Without you in my life, I don’t know where I would be today. You taught me all the important lessons: working hard, respecting others, never quitting, and having fun no matter what. I am who I am because of you. On your birthday, I want to thank you for all you have done. Happy birthday, Mum!
+        </Card.Text>
+        <Card.Text>
+          <small className="text-muted">Thank Yooou!!</small>
+        </Card.Text>
+      </Card.Body>
+    </Card>
 </>
   );
 };

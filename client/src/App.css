@@ -23,6 +23,24 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
+h1 {
+  font-size: 72px;
+  font-family: "Lucida Console", Courier, monospace;
+  /* font-family: Times, "Times New Roman", Georgia, serif; */
+  /* font-family: fangsong; */
+  /* font-family: emoji; */
+  /* font-family: "Gill Sans Extrabold", sans-serif; */
+
+  background: -webkit-linear-gradient(rgb(247, 124, 124), rgb(0, 0, 0));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h4{
+  font-family: cursive;
+}
+
+
 
 .App-link {
   color: #61dafb;

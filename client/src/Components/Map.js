@@ -6,8 +6,8 @@ const Map = () => {
             <div className="col-md-6">
                     
                     <div className="map">
-                        <h2>Our Location:</h2>
-                        <iframe src="https://www.google.com/maps/d/embed?mid=1pRzE-ZS7IaEUPxTg7gn4KZI9LS0-X_bb" style={{width:"107" + "rem"}} height="350"></iframe>
+                        
+                        <iframe src="https://www.google.com/maps/d/embed?mid=1pRzE-ZS7IaEUPxTg7gn4KZI9LS0-X_bb" width="1000px" height="300px" style={{marginLeft:"150px"}}></iframe>
                        
                       
                     </div>
