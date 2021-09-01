@@ -39,9 +39,6 @@ const useStyles = makeStyles((theme) => ({
     textDecoration: "none",
     
   },
-  // BgC :[
-  //   background-Image : "linear-gradient()"
-  // ]
 }));
 
 const imgg =
